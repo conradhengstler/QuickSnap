@@ -80,7 +80,11 @@ namespace CardGames
 		{
 			myGame.Update(); // just ask the game to do this...
 		}
-
+		//shuffle
+		private static void Sheffle(Snap myGame)
+		{
+			myGame.shuffle(); // just ask the game to do this...
+		}
         public static void Main()
         {
             //Open the game window
@@ -98,6 +102,7 @@ namespace CardGames
 				HandleUserInput (myGame);
 				DrawGame (myGame);
 				UpdateGame (myGame);
+				Sheffle(myGame);
             }
         }
     }
